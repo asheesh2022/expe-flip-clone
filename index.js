@@ -7,13 +7,17 @@ import Routes from './routes/route.js'
 import dotenv from 'dotenv';
 import {v4 as uuid} from "uuid"
 
-
 dotenv.config();
 
 const app = express()
 const PORT = process.env.PORT || 8000
+
+const USERNAME = process.env.DB_USERNAME
+const PASSWORD = process.env.DB_PASSWORD
+const URL =  process.env.MONGODB_URI  ||    `mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.zrhhgh1.mongodb.net/flipkart-clone?retryWrites=true&w=majority` 
+
 // const port = process.env.PORT || 5000;
-Connection()
+Connection(URL)
 app.listen(PORT , () => console.log(`Server running on port ${PORT} 🔥`));
 DefaultData();
 
