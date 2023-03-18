@@ -11,7 +11,7 @@ import {v4 as uuid} from "uuid"
 dotenv.config();
 
 const app = express()
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 // const port = process.env.PORT || 5000;
 Connection()
 app.listen(PORT , () => console.log(`Server running on port ${PORT} 🔥`));
