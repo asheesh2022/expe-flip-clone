@@ -37,7 +37,7 @@ paytmParams['ORDER_ID'] = uuid(),
 // niche wala custid use karne se thoda late hojata hai
 // paytmParams['CUST_ID'] = process.env.PAYTM_CUST_ID,
 paytmParams['TXN_AMOUNT'] = '100',
-paytmParams['CALLBACK_URL'] = 'https://flipkart-clone-6ikd.onrender.com/callback'
+paytmParams['CALLBACK_URL'] = 'https://expe-flip-clone.onrender.com//callback'
 paytmParams['EMAIL'] = 'asheesh426344@gmail.com'
 paytmParams['MOBILE_NO'] = '1234567852'
 
